@@ -1,10 +1,8 @@
 package service.service;
-import example.entities.Spid;
-import example.entities.User;
-import jdk.jshell.Snippet;
+import entities.entites.Spid;
+import entities.entites.User;
 import utils.StatusEnum;
 
-import java.sql.Timestamp;
 import java.util.*;
 
 public class SpidService {

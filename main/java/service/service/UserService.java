@@ -1,8 +1,7 @@
 package service.service;
-import example.entities.Base;
-import example.entities.User;
+import entities.entites.Base;
+import entities.entites.User;
 
-import java.sql.Timestamp;
 import java.util.*;
 
 public class UserService extends Base {
