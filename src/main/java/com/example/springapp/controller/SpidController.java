@@ -23,7 +23,7 @@ public class SpidController {
 
     private static final Logger log =   LoggerFactory.getLogger(UserController.class);
 
-    @GetMapping("/spid")
+    @GetMapping("/spids")
     public ResponseEntity<List<Spid>> getAllSpids() {
         return new ResponseEntity(spidService.getAllSpids(), HttpStatus.OK);
     }
@@ -51,7 +51,7 @@ public class SpidController {
     public ResponseEntity<String> deleteSpid(
             @PathVariable(name = "id") long id) throws Exception {
         spidService.deleteSpid(id);
-        return new ResponseEntity("Personi me kete id u fshi", HttpStatus.OK);
+        return new ResponseEntity("Spid is deleted!", HttpStatus.OK);
     }
 
 

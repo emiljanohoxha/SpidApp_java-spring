@@ -34,7 +34,7 @@ public class UserController {
             @PathVariable(name = "id") long id
     ) throws Exception {
         userService.deleteUser(id);
-        return new ResponseEntity("Personi me kete id u fshi", HttpStatus.OK);
+        return new ResponseEntity("User is deleted!", HttpStatus.OK);
     }
 
 
