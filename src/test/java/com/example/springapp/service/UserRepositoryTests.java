@@ -57,6 +57,6 @@ public class UserRepositoryTests {
         boolean expected = underTest.selectExistsUser(id);
 
         // then
-        assertThat(expected).isFalse();
+        assertThat(expected).isTrue();
     }
 }

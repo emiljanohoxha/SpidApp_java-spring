@@ -32,6 +32,7 @@ public class UserService {
         return user;
     }
 
+
     /**
      * @return put method for user
      * @throws Exception if fields are null

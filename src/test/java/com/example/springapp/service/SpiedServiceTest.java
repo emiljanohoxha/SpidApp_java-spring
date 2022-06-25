@@ -23,19 +23,19 @@ class SpiedServiceTest {
     SpidService spidService;
 
     @BeforeAll
-    public void setup() {
+    public void setup() throws Exception {
         Spid spid = new Spid();
         spid.setId(1L);
         spid.setStatus(StatusEnum.APPROVED);
-        when(spidService.approveSpid(spid)).thenReturn(spid);
+        when(spidService.approveSpid(1L)).thenReturn(spid);
     }
 
     @Test
-    public void testDatabaseRetrievalForSpids() {
+    public void testDatabaseRetrievalForSpids() throws Exception {
         Spid spid = new Spid();
         spid.setId(1L);
         spid.setStatus(StatusEnum.APPROVED);
-        assertEquals(spid, spidService.approveSpid(spid));
+        assertEquals(spid, spidService.approveSpid(1L));
     }
 
 }
