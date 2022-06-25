@@ -17,10 +17,8 @@ import static org.mockito.Mockito.when;
 
 @SpringBootTest(classes = {SpringbootDemoApplication.class})
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-//@ExtendWith(MockitoExtension.class)
 
 class SpiedServiceTest {
-
     @Mock
     SpidService spidService;
 

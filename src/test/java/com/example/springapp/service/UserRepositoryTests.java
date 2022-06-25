@@ -16,10 +16,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
 public class UserRepositoryTests {
-
     @Autowired
     private UserRepository underTest;
-
     @AfterEach
     void tearDown() {
         underTest.deleteAll();
@@ -46,6 +44,9 @@ public class UserRepositoryTests {
         // then
         assertThat(expected).isTrue();
     }
+/**
+ *      Fail tests
+ * */
 
     @Test
     void ifUserDoesNotExists() {

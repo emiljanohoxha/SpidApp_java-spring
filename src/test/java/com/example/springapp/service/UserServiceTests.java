@@ -1,6 +1,5 @@
 package com.example.springapp.service;
 
-
 import com.example.springapp.entities.User;
 import com.example.springapp.repository.UserRepository;
 import org.junit.jupiter.api.*;

@@ -1,6 +1,5 @@
 package com.example.springapp;
 
-
 import com.example.springapp.entities.Spid;
 import com.example.springapp.entities.StatusEnum;
 import com.example.springapp.entities.TypeEnum;
@@ -10,7 +9,6 @@ import com.example.springapp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.junit.jupiter.api.Test;
-
 
 @SpringBootTest(classes = {SpringbootDemoApplication.class})
 
