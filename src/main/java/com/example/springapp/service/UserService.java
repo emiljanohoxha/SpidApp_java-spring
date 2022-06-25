@@ -14,6 +14,13 @@ public class UserService {
     @Autowired
     UserRepository userRepository;
 
+
+    /**
+     *
+     * @param user post method for userr
+     * @return
+     * @throws Exception if user already exists
+     */
     public User createUser(User user) throws Exception {
         Boolean existsUser =userRepository
                 .selectExistsUser(user.getId());
@@ -25,6 +32,10 @@ public class UserService {
         return user;
     }
 
+    /**
+     * @return put method for user
+     * @throws Exception if fields are null
+     */
     public User updateUser(Long id, String name, String surname ,String username,String cardNo, String email, String password) throws Exception {
         Optional<User> user = userRepository.findById(id);
         if (name != null) {
